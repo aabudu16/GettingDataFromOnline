@@ -16,7 +16,7 @@
 		853E339923283FA200736A1D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853E339823283FA200736A1D /* NetworkManager.swift */; };
 		853E339B23283FB100736A1D /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853E339A23283FB100736A1D /* AppError.swift */; };
 		853E339D2328400500736A1D /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853E339C2328400500736A1D /* ImageHelper.swift */; };
-		853E33A02328410100736A1D /* SeasonsAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853E339F2328410100736A1D /* SeasonsAPIClient.swift */; };
+		853E33A02328410100736A1D /* ShowAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853E339F2328410100736A1D /* ShowAPIClient.swift */; };
 		853E33A22328415200736A1D /* EpisodeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853E33A12328415200736A1D /* EpisodeAPIClient.swift */; };
 		853E33A52328418900736A1D /* SeasonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853E33A42328418900736A1D /* SeasonsTableViewCell.swift */; };
 		853E33A7232841A100736A1D /* EpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853E33A6232841A100736A1D /* EpisodeTableViewCell.swift */; };
@@ -49,7 +49,7 @@
 		853E339823283FA200736A1D /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		853E339A23283FB100736A1D /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		853E339C2328400500736A1D /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
-		853E339F2328410100736A1D /* SeasonsAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsAPIClient.swift; sourceTree = "<group>"; };
+		853E339F2328410100736A1D /* ShowAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAPIClient.swift; sourceTree = "<group>"; };
 		853E33A12328415200736A1D /* EpisodeAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeAPIClient.swift; sourceTree = "<group>"; };
 		853E33A42328418900736A1D /* SeasonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsTableViewCell.swift; sourceTree = "<group>"; };
 		853E33A6232841A100736A1D /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewCell.swift; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 		853E33A32328415D00736A1D /* API Client */ = {
 			isa = PBXGroup;
 			children = (
-				853E339F2328410100736A1D /* SeasonsAPIClient.swift */,
+				853E339F2328410100736A1D /* ShowAPIClient.swift */,
 				853E33A12328415200736A1D /* EpisodeAPIClient.swift */,
 			);
 			path = "API Client";
@@ -270,7 +270,7 @@
 				853E33A7232841A100736A1D /* EpisodeTableViewCell.swift in Sources */,
 				853E339B23283FB100736A1D /* AppError.swift in Sources */,
 				853E339D2328400500736A1D /* ImageHelper.swift in Sources */,
-				853E33A02328410100736A1D /* SeasonsAPIClient.swift in Sources */,
+				853E33A02328410100736A1D /* ShowAPIClient.swift in Sources */,
 				853E33AA2328441E00736A1D /* EpisodeViewController.swift in Sources */,
 				853E33AD232845BB00736A1D /* SeasonModel.swift in Sources */,
 				853E33A22328415200736A1D /* EpisodeAPIClient.swift in Sources */,
