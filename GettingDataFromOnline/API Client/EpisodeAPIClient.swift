@@ -13,12 +13,12 @@ struct EpisodesPIClient{
     
     static let shared = EpisodesPIClient()
     
-    func fetchData(unmber:Int?,completionHandler: @escaping (Result<Episode,AppError>) -> ()){
+    func fetchData(number:Int?,completionHandler: @escaping (Result<[Episode],AppError>) -> ()){
         
-        var episodeURL = "http://api.tvmaze.com/shows/45/episodes"
+        var episodeURL = "http://api.tvmaze.com/shows/200/episodes"
         
-        if let episodeID = unmber {
-            episodeURL = "http://api.tvmaze.com/search/shows?q=\(episodeID)"
+        if let episodeID = number {
+            episodeURL = "http://api.tvmaze.com/shows/\(episodeID)/episodes"
         }
         
         NetworkManager.shared.fetchData(urlString: episodeURL) { (result) in
@@ -28,10 +28,10 @@ struct EpisodesPIClient{
             case .success(let data):
                 
                 do{
-                    let episodeData = try JSONDecoder().decode(Episode.self, from: data)
+                    let episodeData = try JSONDecoder().decode([Episode].self, from: data)
                     completionHandler(.success(episodeData))
                 }catch{
-                    completionHandler(.failure(.noDataError))
+                    completionHandler(.failure(.badDJSONError))
                 }
             }
         }

@@ -13,12 +13,15 @@ struct ShowAPIClient{
     
     static let shared = ShowAPIClient()
     
-    func fetchData(movieTitle:String?,completionHandler: @escaping (Result<Shows,AppError>) -> ()){
+    let isFetching = false
+    
+    func fetchData(movieTitle:String?,completionHandler: @escaping (Result<[ShowWrapper],AppError>) -> ()){
         
         var showURL = "http://api.tvmaze.com/search/shows?q=girls"
         
         if let show = movieTitle {
             let newString = show.replacingOccurrences(of: " ", with: "-")
+            
             showURL = "http://api.tvmaze.com/search/shows?q=\(newString)"
         }
         
@@ -29,10 +32,11 @@ struct ShowAPIClient{
             case .success(let data):
                 
                 do{
-                    let showData = try JSONDecoder().decode(ShowWrapper.self, from: data)
-                    completionHandler(.success(showData.show))
+                    let showData = try JSONDecoder().decode([ShowWrapper].self, from: data)
+                    completionHandler(.success(showData))
                 }catch{
-                    completionHandler(.failure(.noDataError))
+                    completionHandler(.failure(.badDJSONError))
+                    print(error)
                 }
             }
         }

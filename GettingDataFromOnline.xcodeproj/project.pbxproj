@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8500B65723298DAD00F6378F /* EpisodeDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8500B65623298DAD00F6378F /* EpisodeDetailedViewController.swift */; };
 		853E337923283E5000736A1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853E337823283E5000736A1D /* AppDelegate.swift */; };
-		853E337B23283E5000736A1D /* SeasonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853E337A23283E5000736A1D /* SeasonsViewController.swift */; };
+		853E337B23283E5000736A1D /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853E337A23283E5000736A1D /* ShowViewController.swift */; };
 		853E337E23283E5000736A1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 853E337C23283E5000736A1D /* Main.storyboard */; };
 		853E338023283E5100736A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 853E337F23283E5100736A1D /* Assets.xcassets */; };
 		853E338323283E5100736A1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 853E338123283E5100736A1D /* LaunchScreen.storyboard */; };
@@ -18,10 +19,10 @@
 		853E339D2328400500736A1D /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853E339C2328400500736A1D /* ImageHelper.swift */; };
 		853E33A02328410100736A1D /* ShowAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853E339F2328410100736A1D /* ShowAPIClient.swift */; };
 		853E33A22328415200736A1D /* EpisodeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853E33A12328415200736A1D /* EpisodeAPIClient.swift */; };
-		853E33A52328418900736A1D /* SeasonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853E33A42328418900736A1D /* SeasonsTableViewCell.swift */; };
+		853E33A52328418900736A1D /* ShowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853E33A42328418900736A1D /* ShowTableViewCell.swift */; };
 		853E33A7232841A100736A1D /* EpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853E33A6232841A100736A1D /* EpisodeTableViewCell.swift */; };
 		853E33AA2328441E00736A1D /* EpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853E33A92328441E00736A1D /* EpisodeViewController.swift */; };
-		853E33AD232845BB00736A1D /* SeasonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853E33AC232845BB00736A1D /* SeasonModel.swift */; };
+		853E33AD232845BB00736A1D /* ShowsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853E33AC232845BB00736A1D /* ShowsModel.swift */; };
 		853E33AF232848F000736A1D /* EpisodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853E33AE232848F000736A1D /* EpisodeModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,9 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8500B65623298DAD00F6378F /* EpisodeDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailedViewController.swift; sourceTree = "<group>"; };
 		853E337523283E5000736A1D /* GettingDataFromOnline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GettingDataFromOnline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		853E337823283E5000736A1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		853E337A23283E5000736A1D /* SeasonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsViewController.swift; sourceTree = "<group>"; };
+		853E337A23283E5000736A1D /* ShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
 		853E337D23283E5000736A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		853E337F23283E5100736A1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		853E338223283E5100736A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,10 +53,10 @@
 		853E339C2328400500736A1D /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		853E339F2328410100736A1D /* ShowAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAPIClient.swift; sourceTree = "<group>"; };
 		853E33A12328415200736A1D /* EpisodeAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeAPIClient.swift; sourceTree = "<group>"; };
-		853E33A42328418900736A1D /* SeasonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsTableViewCell.swift; sourceTree = "<group>"; };
+		853E33A42328418900736A1D /* ShowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTableViewCell.swift; sourceTree = "<group>"; };
 		853E33A6232841A100736A1D /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewCell.swift; sourceTree = "<group>"; };
 		853E33A92328441E00736A1D /* EpisodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewController.swift; sourceTree = "<group>"; };
-		853E33AC232845BB00736A1D /* SeasonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonModel.swift; sourceTree = "<group>"; };
+		853E33AC232845BB00736A1D /* ShowsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsModel.swift; sourceTree = "<group>"; };
 		853E33AE232848F000736A1D /* EpisodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,7 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				853E33A6232841A100736A1D /* EpisodeTableViewCell.swift */,
-				853E33A42328418900736A1D /* SeasonsTableViewCell.swift */,
+				853E33A42328418900736A1D /* ShowTableViewCell.swift */,
 			);
 			path = "TableView Cells";
 			sourceTree = "<group>";
@@ -151,8 +153,9 @@
 		853E33AB2328445200736A1D /* View controllers */ = {
 			isa = PBXGroup;
 			children = (
-				853E337A23283E5000736A1D /* SeasonsViewController.swift */,
+				853E337A23283E5000736A1D /* ShowViewController.swift */,
 				853E33A92328441E00736A1D /* EpisodeViewController.swift */,
+				8500B65623298DAD00F6378F /* EpisodeDetailedViewController.swift */,
 			);
 			path = "View controllers";
 			sourceTree = "<group>";
@@ -160,7 +163,7 @@
 		853E33B02328490600736A1D /* Model Folder */ = {
 			isa = PBXGroup;
 			children = (
-				853E33AC232845BB00736A1D /* SeasonModel.swift */,
+				853E33AC232845BB00736A1D /* ShowsModel.swift */,
 				853E33AE232848F000736A1D /* EpisodeModel.swift */,
 			);
 			path = "Model Folder";
@@ -272,11 +275,12 @@
 				853E339D2328400500736A1D /* ImageHelper.swift in Sources */,
 				853E33A02328410100736A1D /* ShowAPIClient.swift in Sources */,
 				853E33AA2328441E00736A1D /* EpisodeViewController.swift in Sources */,
-				853E33AD232845BB00736A1D /* SeasonModel.swift in Sources */,
+				853E33AD232845BB00736A1D /* ShowsModel.swift in Sources */,
 				853E33A22328415200736A1D /* EpisodeAPIClient.swift in Sources */,
-				853E33A52328418900736A1D /* SeasonsTableViewCell.swift in Sources */,
+				853E33A52328418900736A1D /* ShowTableViewCell.swift in Sources */,
 				853E339923283FA200736A1D /* NetworkManager.swift in Sources */,
-				853E337B23283E5000736A1D /* SeasonsViewController.swift in Sources */,
+				853E337B23283E5000736A1D /* ShowViewController.swift in Sources */,
+				8500B65723298DAD00F6378F /* EpisodeDetailedViewController.swift in Sources */,
 				853E337923283E5000736A1D /* AppDelegate.swift in Sources */,
 				853E33AF232848F000736A1D /* EpisodeModel.swift in Sources */,
 			);

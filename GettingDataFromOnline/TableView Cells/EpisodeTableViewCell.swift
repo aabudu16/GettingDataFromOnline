@@ -10,6 +10,12 @@ import UIKit
 
 class EpisodeTableViewCell: UITableViewCell {
 
+    @IBOutlet var seasonAndEpisodeNumber: UILabel!
+    @IBOutlet var episodeTitle: UILabel!
+    @IBOutlet var episodeImage: UIImageView!
+    
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
